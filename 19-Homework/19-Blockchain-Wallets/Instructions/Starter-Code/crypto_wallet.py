@@ -4,6 +4,8 @@
 # This file contains the Ethereum transaction functions that you have created throughout this module’s lessons. By using import statements, you will integrate this `crypto_wallet.py` Python script into the Fintech Finder interface program that is found in the `fintech_finder.py` file.
 
 ################################################################################
+
+
 # Imports
 import os
 import requests
@@ -32,6 +34,8 @@ def generate_account():
     account = Account.privateKeyToAccount(private)
 
     return account
+
+   
 
 def get_balance(w3, address):
     """Using an Ethereum account address access the balance of Ether"""
