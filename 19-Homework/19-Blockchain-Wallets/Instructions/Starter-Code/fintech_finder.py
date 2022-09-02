@@ -93,8 +93,8 @@ from crypto_wallet import generate_account, get_balance, send_transaction
 candidate_database = {
     "Lane": ["Lane", "0x662Ea135036299D8630333dE03ecE29838db2B0d", "4.3", .20, "Images/lane.jpeg"],
     "Ash": ["Ash", "0xD686082BF76770db78CB14faA70105018da7932c", "5.0", .33, "Images/ash.jpeg"],
-    "Jo": ["Jo", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "4.7", .19, "Images/jo.jpeg"],
-    "Kendall": ["Kendall", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "4.1", .16, "Images/kendall.jpeg"]
+    "Jo": ["Jo", "0xD686082BF76770db78CB14faA70105018da7932c", "4.7", .19, "Images/jo.jpeg"],
+    "Kendall": ["Kendall", "0xB61985038C666CaA829ed40Bb3398fd385c70d2B", "4.1", .16, "Images kendall.jpeg"]
 }
 
 # A list of the FinTech Finder candidates first names
@@ -278,13 +278,13 @@ if st.sidebar.button("Send Transaction"):
      transaction_hash = send_transaction(w3, account, candidate_address, wage)
 
     # Markdown for the transaction hash
-    st.sidebar.markdown("#### Validated Transaction Hash")
+     st.sidebar.markdown("#### Validated Transaction Hash")
 
     # Write the returned transaction hash to the screen
-    st.sidebar.write(transaction_hash)
+     st.sidebar.write(transaction_hash)
 
     # Celebrate your successful payment
-    st.balloons()
+     st.balloons()
 
 # The function that starts the Streamlit application
 # Writes FinTech Finder candidates to the Streamlit page
@@ -324,4 +324,4 @@ if st.sidebar.button("Send Transaction"):
 # 6. Navigate to the Ganache transactions tab and locate the transaction.
 # * Click the transaction and take a screenshot of it.
 # Save this screenshot to the README.md file of your GitHub repository for
-#  this Challenge assignment.
+#this Challenge assignment.
